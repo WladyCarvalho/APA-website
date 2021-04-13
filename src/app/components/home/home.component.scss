@@ -1,0 +1,15 @@
+section{
+    background: rgb(19,135,227);
+    background: linear-gradient(163deg, rgba(19,135,227,1) 0%, rgba(19,135,227,1) 0%, rgba(71,17,125,1) 100%);
+}
+
+.hero-btn-stroke{
+
+    background: none !important; 
+    border: 1px solid; 
+    border-color: white;
+
+}
+.spacer{
+    flex: 1 1 auto;
+}
