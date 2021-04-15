@@ -20,6 +20,7 @@
 
   <mat-sidenav-content>
     <mat-toolbar color="primary">
+      
       <button
         type="button"
         aria-label="Toggle sidenav"
@@ -28,11 +29,13 @@
         *ngIf="isHandset$ | async">
         <mat-icon aria-label="Side nav toggle icon">menu</mat-icon>
       </button>
+
       <div>
         <img src="../../../assets/logo/logo_apa.png" style="margin-top: 10px; margin-right: 10px;" alt="">
       </div>
      
       <span class="spacer"></span>
+
       <div [ngClass]="{hide: (isHandset$ |async )===true}">
 
       <a mat-button routerLink='home'>INICIO</a>

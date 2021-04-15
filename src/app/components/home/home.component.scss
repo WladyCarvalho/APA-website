@@ -2,6 +2,16 @@
     
 }
 
+.hero-btn-stroke-b{
+
+    background: none !important; 
+    border: 2px solid; 
+    border-color:#1387E3;
+    margin-left: 10px;
+    color:#1387E3;
+
+}
+
 .hero-btn-stroke{
 
     background: none !important; 
@@ -9,7 +19,9 @@
     border-color: white;
 
 }
+
 .spacer{
+    
     flex: 1 1 auto;
 }
 .custom-hero{
@@ -19,48 +31,57 @@
 
 }
 
-.custom-title,.custom-subtitle{
-    color: white ;
-}
 
 .custom-section-2{
-    
+
     background-image: linear-gradient(212deg, rgba(19,135,227,1) 0%, rgba(82,176,247,0.835171568627451) 0%, rgba(0,0,0,0.8799894957983193) 100%),
      url("../../../assets/img/girl_smiling_img.png");
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+
 }
 
 .custom-section{
-    
+
     background-image: linear-gradient(212deg, rgba(19,135,227,1) 0%, rgba(82,176,247,0.835171568627451) 0%, rgba(0,0,0,0.8799894957983193) 100%),
      url("../../../assets/img/online_meeting_img.png");
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    
 }
 
 .center {
+
     display: flex;
     justify-content: center;
     align-items: center;
+
   }
 
   .custom-gradient-section{
+
     background: rgb(19,135,227);
     background: linear-gradient(128deg, rgba(19,135,227,1) 0%, rgba(82,176,247,0.835171568627451) 0%, rgba(0,0,0,0.8799894957983193) 100%);
+ 
   }
 
   .parallax{
+
       background-image: url("../../../assets/img/girl_smiling_img.png");
       min-height: 500px;
       background-attachment: fixed;
       background-position: center;
       background-repeat: no-repeat;
       background-size: cover;
+
+  }
+
+  .custom-event-box{
+      width: 400px;
   }
 
   /*

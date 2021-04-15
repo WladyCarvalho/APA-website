@@ -2,10 +2,10 @@
   <section class="hero is-halfheight container">
     <div class="hero-body ">
       <div>
-        <p class="title custom-title">
+        <p class="title has-text-white">
           Conferência APA
         </p>
-        <p class="subtitle custom-subtitle">
+        <p class="subtitle has-text-white">
           Excepteur sint occaecat cupidatat <br>non proident, sunt in culpa qui officia
         </p>
         <p>
@@ -52,11 +52,11 @@
 
 
 <section class="section is-medium custom-section-2 ">
-  <div class="center">
-    <p class="title custom-title">Participe e aprenda</p>
+  <div class="has-text-centered">
+    <p class="title has-text-white">Participe e aprenda</p>
   </div>
-  <div class="center">
-    <p class="subtitle custom-subtitle">No conforto de sua casa, ou em qualquer lugar!</p>
+  <div class="has-text-centered">
+    <p class="subtitle has-text-white">No conforto de sua casa, ou em qualquer lugar!</p>
   </div>
 </section>
 
@@ -75,9 +75,22 @@
 </section>
 
 <section class="section is-medium custom-section ">
-  <div class="center">
-    <p class="title custom-title">Evento em destaque</p>
-  </div>
+  <div class="container">
+    <div class="content custom-event-box">
+        <p class="subtitle is-3" style="color: #2699FB;">
+          Engenharia do design
+          estratégias de UI/UX
+        </p>
+        <p class="has-text-white">
+          <mat-icon style="color: #2699FB;">date_range</mat-icon> <span>Mar 30, 2021</span>
+          <mat-icon style="color: #2699FB; margin-left: 15px;">laptop</mat-icon> <span>Mar 30, 2021</span>
+        </p>
+        <p>
+          <a mat-raised-button color="primary" >SABER MAIS </a>
+          <a mat-flat-button color="primary" class="hero-btn-stroke-b">SABER MAIS </a>
+        </p>
+    </div>
+</div>
 </section>
 
 <section class="section container">
@@ -99,6 +112,17 @@
   <div class="columns is-desktop block">
     <div class="column content is-half">
       <p class="title">O que falam de nós!</p>
+
+      <div class="columns">
+
+        <div class="column">
+             <app-comment-people-feed></app-comment-people-feed> 
+        </div>
+        <div class="column">
+             <app-comment-people-feed></app-comment-people-feed> 
+        </div>
+
+      </div>
 
     </div>
   </div>

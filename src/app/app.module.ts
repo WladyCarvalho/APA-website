@@ -1,6 +1,6 @@
 
 import { NgMaterialModule } from './ng-material/ng-material/ng-material.module';
-import { NgModule } from '@angular/core';
+import { CUSTOM_ELEMENTS_SCHEMA, NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
@@ -21,6 +21,9 @@ import { MatButtonModule } from '@angular/material/button';
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatIconModule } from '@angular/material/icon';
 import { MatListModule } from '@angular/material/list';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { HttpClientModule } from '@angular/common/http';
+import { CommentPeopleFeedComponent } from './components/comment-people-feed/comment-people-feed.component';
 
 @NgModule({
   declarations: [
@@ -33,7 +36,8 @@ import { MatListModule } from '@angular/material/list';
     SobreComponent,
     ComunidadeComponent,
     ContactoComponent,
-    DoacaoComponent
+    DoacaoComponent,
+    CommentPeopleFeedComponent
   ],
   imports: [
     BrowserModule,
@@ -45,7 +49,10 @@ import { MatListModule } from '@angular/material/list';
     MatButtonModule,
     MatSidenavModule,
     MatIconModule,
-    MatListModule
+    MatListModule,
+    FontAwesomeModule,
+    HttpClientModule
+
     
   ],
   providers: [],
