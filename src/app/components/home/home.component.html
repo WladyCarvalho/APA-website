@@ -10,7 +10,6 @@
         </p>
         <p>
           <a mat-flat-button color="primary" class="hero-btn-stroke">SABER MAIS </a>
-
         </p>
       </div>
       <span class="spacer"></span>
@@ -26,11 +25,19 @@
   <div class="columns is-desktop block">
     <div class="column content is-half">
       <p class="title">Sobre a conferência</p>
-      <p class="subtitle">
+      <p class="subtitle" style="max-width: 400px;">
         Excepteur sint occaecat cupidatat non proident,
         sunt in culpa qui officia
       </p>
-      <p class="box">
+      <p class=" has-text-justified" style="max-width: 500px;">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+        tempor incididunt ut ero labore et dolore magna aliqua. Ut enim ad
+        minim veniam, quis nostrud exercitation ullamco poriti laboris nisi ut
+        aliquip ex ea commodo consequat
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+        tempor incididunt ut ero labore et dolore magna aliqua. Ut enim ad
+        minim veniam, quis nostrud exercitation ullamco poriti laboris nisi ut
+        aliquip ex ea commodo consequat
         Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
         tempor incididunt ut ero labore et dolore magna aliqua. Ut enim ad
         minim veniam, quis nostrud exercitation ullamco poriti laboris nisi ut
@@ -38,7 +45,7 @@
       </p>
 
       <p>
-        <a mat-raised-button color="blue">SABER MAIS </a>
+        <a class="btn-white" mat-raised-button color="blue" color="primary">SABER MAIS </a>
       </p>
     </div>
 
@@ -88,31 +95,70 @@
 </section>
 
 <section class="section is-medium custom-section ">
+
   <div class="container">
+
     <div class="content custom-event-box">
         <p class="subtitle is-3" style="color: #2699FB;">
-          Engenharia do design
-          estratégias de UI/UX
+          Engenharia do design estratégias de UI/UX
         </p>
-        <p class="has-text-white">
-          <mat-icon style="color: #2699FB;">date_range</mat-icon> <span>Mar 30, 2021</span>
-          <mat-icon style="color: #2699FB; margin-left: 15px;">laptop</mat-icon> <span>Mar 30, 2021</span>
+        <p class="has-text-white ">
+          <span class="event-container">
+            <mat-icon class="event-item" style="margin-left:0% !important;">date_range</mat-icon> <span>Mar 30, 2021</span>
+            <mat-icon class="event-item">laptop</mat-icon> <span>On line</span>
+          </span>
         </p>
-        <p>
-          <a mat-raised-button color="primary" >SABER MAIS </a>
+        <p class="has-text-white has-text-justified-desktop " style="max-width: 500px;">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+          tempor incididunt ut ero labore et dolore magna aliqua. Ut enim ad
+          minim veniam.
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+          tempor incididunt ut ero labore et dolore magna aliqua. Ut enim ad
+          minim veniam.
+        </p>
+        <p class="event-container">
+          <a mat-raised-button color="primary" class="btn-white">SABER MAIS </a>
           <a mat-flat-button color="primary" class="hero-btn-stroke-b">SABER MAIS </a>
         </p>
     </div>
+
+    <div class="view-prelectors has-text-centered ">
+        <a >
+          <span class="view-prelectors has-text-grey-light">
+            VER PRELEITORES
+            <mat-icon><span class="material-icons-outlined">
+              arrow_forward
+              </span></mat-icon>
+          </span>
+        </a>
+    </div>
 </div>
+
 </section>
 
-<section class="section container">
-  <div class="columns is-desktop block">
-    <div class="column content is-half">
+<section class="section  gray-background">
+  <div class="container">
+    <div class="content is-half">
       <p class="title">sponsors</p>
-
+  
     </div>
-
+    <div class="columns  sponsor-box">
+      
+      <div class="column">
+          <app-sponsor-item></app-sponsor-item>
+      </div>
+      <div class="column">
+          <app-sponsor-item></app-sponsor-item>
+      </div>
+      <div class="column">
+          <app-sponsor-item></app-sponsor-item>
+      </div>
+      <div class="column">
+          <app-sponsor-item></app-sponsor-item>
+      </div>
+     
+  
+    </div>
   </div>
 
 </section>

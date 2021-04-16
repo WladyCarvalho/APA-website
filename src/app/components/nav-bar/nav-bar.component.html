@@ -19,35 +19,36 @@
   </mat-sidenav>
 
   <mat-sidenav-content>
-    <mat-toolbar color="primary">
-      
-      <button
-        type="button"
-        aria-label="Toggle sidenav"
-        mat-icon-button
-        (click)="drawer.toggle()"
-        *ngIf="isHandset$ | async">
-        <mat-icon aria-label="Side nav toggle icon">menu</mat-icon>
-      </button>
+    <div class="custom-toolbar">
+      <mat-toolbar color="primary" class="container" >
 
-      <div>
-        <img src="../../../assets/logo/logo_apa.png" style="margin-top: 10px; margin-right: 10px;" alt="">
-      </div>
-     
-      <span class="spacer"></span>
-
-      <div [ngClass]="{hide: (isHandset$ |async )===true}">
-
-      <a mat-button routerLink='home'>INICIO</a>
-      <a mat-button routerLink='eventos'>EVENTOS</a>
-      <a mat-button routerLink='artigos'>ARTIGOS</a>
-      <a mat-button routerLink='sobre'>SOBRE</a>
-      <a mat-button routerLink='contacto'>CONTACTO</a>
-      <a mat-button routerLink='comunidades'>COMUNIDADE</a>
-      <a mat-button routerLink='doacao'>DOAÇÕES</a>
-      </div>
-     
-    </mat-toolbar>
+        <button
+          type="button"
+          aria-label="Toggle sidenav"
+          mat-icon-button
+          (click)="drawer.toggle()"
+          *ngIf="isHandset$ | async">
+          <mat-icon aria-label="Side nav toggle icon">menu</mat-icon>
+        </button>
+  
+        <div>
+          <img src="../../../assets/logo/logo_apa.png" style="margin-top: 10px; margin-right: 10px;" alt="">
+        </div>
+       
+        <span class="spacer"></span>
+  
+        <div [ngClass]="{hide: (isHandset$ |async )===true}">
+          <a mat-button routerLink='home'>INICIO</a>
+          <a mat-button routerLink='eventos'>EVENTOS</a>
+          <a mat-button routerLink='artigos'>ARTIGOS</a>
+          <a mat-button routerLink='sobre'>SOBRE</a>
+          <a mat-button routerLink='contacto'>CONTACTO</a>
+          <a mat-button routerLink='comunidades'>COMUNIDADE</a>
+          <a mat-button routerLink='doacao'>DOAÇÕES</a>
+        </div>
+       
+      </mat-toolbar>
+    </div>
     <!-- Add Content Here -->
     <ng-content></ng-content>
   </mat-sidenav-content>

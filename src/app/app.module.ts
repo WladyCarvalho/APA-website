@@ -25,6 +25,7 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { HttpClientModule } from '@angular/common/http';
 import { CommentPeopleFeedComponent } from './components/comment-people-feed/comment-people-feed.component';
 import { ArtigoCardComponent } from './components/artigo-card/artigo-card.component';
+import { SponsorItemComponent } from './components/sponsor-item/sponsor-item.component';
 
 @NgModule({
   declarations: [
@@ -39,7 +40,8 @@ import { ArtigoCardComponent } from './components/artigo-card/artigo-card.compon
     ContactoComponent,
     DoacaoComponent,
     CommentPeopleFeedComponent,
-    ArtigoCardComponent
+    ArtigoCardComponent,
+    SponsorItemComponent
   ],
   imports: [
     BrowserModule,

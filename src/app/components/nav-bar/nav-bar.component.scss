@@ -24,8 +24,18 @@
 .hide{
   display: none;
 }
+path{
+  fill: brown;
+}
 
 .spacer{
   flex: 1 1 auto;
 }
 
+.custom-toolbar{
+  background-color: #040C10; 
+  width: 100% !important;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
