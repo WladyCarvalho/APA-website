@@ -26,6 +26,14 @@ export class FooterComponent implements OnInit {
         'facebook',
         this.domSanitizer.bypassSecurityTrustResourceUrl("../assets/icons/facebook.svg")
       );
+      this.matIconRegistry.addSvgIcon(
+        'clap',
+        this.domSanitizer.bypassSecurityTrustResourceUrl("../assets/icons/ic_clap.svg")
+      );
+      this.matIconRegistry.addSvgIcon(
+        'comment',
+        this.domSanitizer.bypassSecurityTrustResourceUrl("../assets/icons/ic_comment.svg")
+      );
   }
 
   ngOnInit(): void {

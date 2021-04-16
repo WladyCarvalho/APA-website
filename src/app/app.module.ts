@@ -24,6 +24,7 @@ import { MatListModule } from '@angular/material/list';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { HttpClientModule } from '@angular/common/http';
 import { CommentPeopleFeedComponent } from './components/comment-people-feed/comment-people-feed.component';
+import { ArtigoCardComponent } from './components/artigo-card/artigo-card.component';
 
 @NgModule({
   declarations: [
@@ -37,7 +38,8 @@ import { CommentPeopleFeedComponent } from './components/comment-people-feed/com
     ComunidadeComponent,
     ContactoComponent,
     DoacaoComponent,
-    CommentPeopleFeedComponent
+    CommentPeopleFeedComponent,
+    ArtigoCardComponent
   ],
   imports: [
     BrowserModule,

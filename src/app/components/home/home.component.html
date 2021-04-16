@@ -63,12 +63,25 @@
 
 <section class="section container">
   <div class="columns is-desktop block">
-    <div class="column content is-small">
+   <!-- <div class="column content is-small">
       <h1>Artigos em destaque</h1>
       <p class="subtitle">
         Veja aqui os artigos mais recentes!
       </p>
+    </div> -->
+    <div class="column">
+        <app-artigo-card></app-artigo-card>
     </div>
+    <div class="column">
+      <app-artigo-card></app-artigo-card>
+  </div>
+  <div class="column">
+    <app-artigo-card></app-artigo-card>
+</div>
+
+<div class="column">
+  <app-artigo-card></app-artigo-card>
+</div>
 
   </div>
 
@@ -110,11 +123,17 @@
 
 <section class="section container">
   <div class="columns is-desktop block">
-    <div class="column content is-half">
+    <div class="column ">
       <p class="title">O que falam de nós!</p>
 
       <div class="columns">
 
+        <div class="column">
+             <app-comment-people-feed></app-comment-people-feed> 
+        </div>
+        <div class="column">
+             <app-comment-people-feed></app-comment-people-feed> 
+        </div>
         <div class="column">
              <app-comment-people-feed></app-comment-people-feed> 
         </div>
