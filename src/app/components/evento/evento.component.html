@@ -1,1 +1,108 @@
-<p>evento works!</p>
+<div class="custom-hero">
+    <section class="hero container is-halfheight">
+        <div class="hero-body ">
+
+            <div class="tile is-parent">
+                <article class="tile is-child is-5">
+                 
+                  <div class="content">
+
+                    <div class="content custom-event-box">
+                        <p class="subtitle is-2 has-text-white" >
+                            Engenharia do design estratégias de UI/UX
+                        </p>
+                        <p class="has-text-white ">
+                            <span class="event-container">
+                                <mat-icon class="event-item" style="margin-left:0% !important;">date_range</mat-icon> <span class="has-text-grey-lighter">Mar
+                                    30, 2021</span>
+                                <mat-icon class="event-item">laptop</mat-icon> <span class="has-text-grey-lighter">On line</span>
+                            </span>
+                        </p>
+                        <p class="has-text-white  content" style="max-width: 92%;">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                            tempor incididunt ut ero labore et dolore magna aliqua. Ut enim ad
+                            minim veniam.
+                        </p>
+                        <p>
+                           <span>
+                               <div class="columns">
+                                   <div class="column">
+                                    <a mat-raised-button color="primary" class="btn-white" style="width: 100% !important;">SABER MAIS </a>
+                                   </div>
+                                   <div class="column">
+                                    <a mat-flat-button color="primary" class="hero-btn-stroke-b" style="width: 100% !important;">SABER MAIS </a>
+                                   </div>
+                               </div>
+                           </span>
+                        </p>
+                    </div>
+
+                  </div>
+                </article>
+              </div>
+              <div class="">
+                <a (click)="navegar()">
+                  <span class="view-prelectors has-text-grey-light">
+                    VER PRELEITORES
+                    <mat-icon><span class="material-icons-outlined">
+                      arrow_forward
+                      </span></mat-icon>
+                  </span>
+                </a>
+            </div>
+
+        </div>
+    </section>
+</div>
+<section class="section  custom-section container">
+    <div class="container box">
+        <div class="columns">
+            <div class="column">
+                <mat-form-field appearance="outline" class="custom-mat-input input-full-width">
+                    <mat-label>Evento</mat-label>
+                    <input type="email" class="custom-mat-input" matInput placeholder="Autor ou título do artigo!">
+                </mat-form-field>
+            </div>
+            <div class="column">
+                <mat-form-field appearance="outline" class="input-full-width">
+                    <mat-label>Categoria</mat-label>
+                    <mat-select>
+                        <mat-option value="one">Cloud computing</mat-option>
+                        <mat-option value="two">Artificial Intelligence</mat-option>
+                    </mat-select>
+                </mat-form-field>
+            </div>
+            <div class="column">
+                <button mat-raised-button color="primary" style="height: 50px;" class="input-full-width">Pesquisar</button>
+            </div>
+        </div>
+    </div>
+    <div class="columns container">
+       <div class="column">
+        <p>
+            <app-evento-card></app-evento-card>
+        </p>
+        <p>
+            <app-evento-card></app-evento-card>
+        </p>
+       </div>
+       <div class="column">
+        <p>
+            <app-evento-card></app-evento-card>
+        </p>
+        <p>
+            <app-evento-card></app-evento-card>
+        </p>
+       </div>
+
+       <div class="column">
+        <p>
+            <app-evento-card></app-evento-card>
+        </p>
+        <p>
+            <app-evento-card></app-evento-card>
+        </p>
+       </div>
+       
+    </div>
+</section>

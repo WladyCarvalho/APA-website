@@ -1,0 +1,46 @@
+.artigo-card {
+  }
+  .custom-event-box{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 10px;
+}
+.event-item{
+    color: #2699FB; 
+    margin-left: 20px; 
+    margin-right: 10px;
+}
+.event-container{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-content:center;
+}
+.btn-white{
+    margin: 5px !important;
+    display: flex;
+    flex-direction: unset;
+    vertical-align: middle;
+    justify-content: center;
+    align-items: center;
+}
+.hero-btn-stroke-b{
+
+    background: none !important; 
+    border: 2px solid; 
+    border-color:#1387E3;
+    margin-left: 10px;
+    color:#1387E3;
+    display: flex;
+    vertical-align: middle;
+    align-self: center;
+    flex-direction: unset;
+    align-items: center;
+    justify-content: center;
+}
+
+.card-c { cursor: pointer; }

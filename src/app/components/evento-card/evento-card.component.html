@@ -1,0 +1,33 @@
+<mat-card class="artigo-card">
+
+    <img src="../../../assets/img/background2.jpg" >
+    <mat-card-content class="card-c" (click)="navegar()">
+        <div class="content custom-event-box">
+            <p class="subtitle is-5"> <strong>John Doen</strong></p>
+         
+            <p class="has-text-white ">
+                <span class="event-container">
+                    <mat-icon class="event-item" style="margin-left:0% !important;">date_range</mat-icon> <span class="has-text-grey-dark">Mar
+                        30, 2021</span>
+                    <mat-icon class="event-item">laptop</mat-icon> <span class="has-text-grey-dark">On line</span>
+                </span>
+            </p>
+            <p class="has-text-justified " style="max-width: 500px;">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                tempor incididunt ut ero labore et dolore magna aliqua. Ut enim ad
+                minim veniam.
+            </p>
+        </div>
+    </mat-card-content>
+    <mat-card-actions>
+       <div class="content ">
+        <p class="event-container">
+            <a mat-raised-button color="primary" class="btn-white">INSCREVER-SE </a>
+            <a mat-stroked-button color="primary" >AGENDA</a>
+            <a mat-icon-button color="primary" class="btn-white" (click)="navegar()">
+                <mat-icon>visibility</mat-icon>
+            </a>
+        </p>
+       </div>
+    </mat-card-actions>
+</mat-card>

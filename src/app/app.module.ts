@@ -1,3 +1,4 @@
+import { ArtigoPastItemComponent } from './components/artigo-past-item/artigo-past-item.component';
 
 import { NgMaterialModule } from './ng-material/ng-material/ng-material.module';
 import { CUSTOM_ELEMENTS_SCHEMA, NgModule } from '@angular/core';
@@ -26,6 +27,14 @@ import { HttpClientModule } from '@angular/common/http';
 import { CommentPeopleFeedComponent } from './components/comment-people-feed/comment-people-feed.component';
 import { ArtigoCardComponent } from './components/artigo-card/artigo-card.component';
 import { SponsorItemComponent } from './components/sponsor-item/sponsor-item.component';
+import { EventoCardComponent } from './components/evento-card/evento-card.component';
+import { MatNativeDateModule } from '@angular/material/core';
+import { ComunidadeItemComponent } from './components/comunidade-item/comunidade-item.component';
+import { MemberItemComponent } from './components/member-item/member-item.component';
+import { EventoDetalheComponent } from './components/evento-detalhe/evento-detalhe.component';
+import { ArtigoDetalheComponent } from './components/artigo-detalhe/artigo-detalhe.component';
+import { PreleitorEventoCardComponent } from './components/preleitor-evento-card/preleitor-evento-card.component';
+import { ComentarioItemComponent } from './components/comentario-item/comentario-item.component';
 
 @NgModule({
   declarations: [
@@ -41,7 +50,15 @@ import { SponsorItemComponent } from './components/sponsor-item/sponsor-item.com
     DoacaoComponent,
     CommentPeopleFeedComponent,
     ArtigoCardComponent,
-    SponsorItemComponent
+    SponsorItemComponent,
+    EventoCardComponent,
+    ArtigoPastItemComponent,
+    ComunidadeItemComponent,
+    MemberItemComponent,
+    EventoDetalheComponent,
+    ArtigoDetalheComponent,
+    PreleitorEventoCardComponent,
+    ComentarioItemComponent
   ],
   imports: [
     BrowserModule,
@@ -53,9 +70,11 @@ import { SponsorItemComponent } from './components/sponsor-item/sponsor-item.com
     MatButtonModule,
     MatSidenavModule,
     MatIconModule,
+    MatNativeDateModule,
     MatListModule,
     FontAwesomeModule,
-    HttpClientModule
+    HttpClientModule,
+    
 
     
   ],

@@ -8,12 +8,12 @@
       [opened]="(isHandset$ | async) === false">
     <mat-toolbar >Menu</mat-toolbar>
     <mat-nav-list>
-      <a mat-list-item (click)="drawer.toggle()" routerLink='home'>INICIO</a>
-      <a mat-list-item (click)="drawer.toggle()" routerLink='eventos'>EVENTOS</a>
-      <a mat-list-item (click)="drawer.toggle()" routerLink='artigos'>ARTIGOS</a>
+      <a mat-list-item (click)="drawer.toggle()" routerLink='home' >INICIO</a>
+      <a mat-list-item (click)="drawer.toggle()" routerLink='eventos' >EVENTOS</a>
+      <a mat-list-item (click)="drawer.toggle()" routerLink='artigos' >ARTIGOS</a>
       <a mat-list-item (click)="drawer.toggle()" routerLink='sobre'>SOBRE</a>
-      <a mat-list-item (click)="drawer.toggle()" routerLink='contacto'>CONTACTO</a>
-      <a mat-list-item (click)="drawer.toggle()" routerLink='comunidades'>COMUNIDADE</a>
+      <a mat-list-item (click)="drawer.toggle()" routerLink='contacto' >CONTACTO</a>
+      <a mat-list-item (click)="drawer.toggle()" routerLink='comunidades' >COMUNIDADE</a>
       <a mat-list-item (click)="drawer.toggle()" routerLink='doacao'>DOAÇÕES</a>
     </mat-nav-list>
   </mat-sidenav>
@@ -38,13 +38,13 @@
         <span class="spacer"></span>
   
         <div [ngClass]="{hide: (isHandset$ |async )===true}">
-          <a mat-button routerLink='home'>INICIO</a>
-          <a mat-button routerLink='eventos'>EVENTOS</a>
-          <a mat-button routerLink='artigos'>ARTIGOS</a>
-          <a mat-button routerLink='sobre'>SOBRE</a>
-          <a mat-button routerLink='contacto'>CONTACTO</a>
-          <a mat-button routerLink='comunidades'>COMUNIDADE</a>
-          <a mat-button routerLink='doacao'>DOAÇÕES</a>
+          <a mat-button routerLink='home' routerLinkActive='active' [routerLinkActiveOptions]="{exact: true}" class="active-b">INICIO</a>
+          <a mat-button routerLink='eventos' routerLinkActive='active' class="active-b">EVENTOS</a>
+          <a mat-button routerLink='artigos' routerLinkActive='active' class="active-b">ARTIGOS</a>
+          <a mat-button routerLink='sobre' routerLinkActive='active' class="active-b">SOBRE</a>
+          <a mat-button routerLink='contacto' routerLinkActive='active' class="active-b">CONTACTO</a>
+          <a mat-button routerLink='comunidades' routerLinkActive='active' class="active-b">COMUNIDADE</a>
+          <a mat-button routerLink='doacao' routerLinkActive='active' class="active-b">DOAÇÕES</a>
         </div>
        
       </mat-toolbar>

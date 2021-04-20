@@ -1,0 +1,65 @@
+.custom-hero{
+    background-size: 100%;
+    background: rgb(19,135,227);
+    background: linear-gradient(237deg, rgba(19,135,227,1) 0%, rgba(82,176,247,1) 0%, rgba(0,0,0,1) 70%);
+}
+
+.event-container{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-content:center;
+}
+
+.event-item{
+    color: #2699FB; 
+    margin-left: 20px; 
+    margin-right: 10px;
+}
+
+.custom-event-box{
+    max-width: 92%;
+}
+
+.btn-white{
+    height: 48px;
+    display: flex;
+    flex-direction: unset;
+    vertical-align: middle;
+    justify-content: center;
+    align-items: center;
+}
+.hero-btn-stroke-b{
+
+    background: none !important; 
+    border: 2px solid; 
+    border-color:#1387E3;
+    color:#1387E3;
+    height: 48px;
+    display: flex;
+    vertical-align: middle;
+    align-self: center;
+    flex-direction: unset;
+    align-items: center;
+    justify-content: center;
+}
+
+.input-full-width {
+    width: 100%;
+}
+
+.view-prelectors{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-content:center;
+}
+
+.hero.is-halfheight .hero-body, .hero.is-fullheight .hero-body, .hero.is-fullheight-with-navbar .hero-body {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.card-c { cursor: pointer; }

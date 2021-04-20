@@ -1,4 +1,4 @@
-<mat-card class="artigo-card">
+<mat-card class="artigo-card" >
 
     <mat-card-header>
         <div mat-card-avatar class="artigo-header-image"></div>
@@ -10,9 +10,9 @@
         </mat-card-subtitle>
     </mat-card-header>
 
-    <img src="../../../assets/img/background2.jpg" >
+    <img src="../../../assets/img/background2.jpg" class="card-c" (click)="navegar()">
 
-    <mat-card-content>
+    <mat-card-content class="card-c" (click)="navegar()">
 
         <div class="conteudo content">
             <p class="subtitle is-5"> <strong>John Doen</strong></p>
@@ -33,6 +33,4 @@
             </a> 1k
           </p>
     </mat-card-actions>
-
-
 </mat-card>

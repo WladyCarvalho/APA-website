@@ -1,0 +1,36 @@
+.custom-hero{
+    background-size: 100%;
+    background-image: linear-gradient(212deg, rgba(19,135,227,1) 0%, rgba(82,176,247,0.835171568627451) 0%, rgba(0,0,0,0.8799894957983193) 100%),
+     url("../../../assets/img/SDLC.jpg");
+     background-position: center;
+     background-repeat: no-repeat;
+    background-size: cover;
+    }
+
+.custom-section{
+
+    background-image: linear-gradient(212deg, rgba(19,135,227,1) 0%, rgba(82,176,247,0.835171568627451) 0%, rgba(0,0,0,0.8799894957983193) 100%),
+     url("../../../assets/img/online_meeting_img.png");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+
+.event-container{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-content:center;
+}
+.user-box{
+    display: flex;
+    align-items: flex-end;
+    flex-wrap: nowrap;
+    flex-direction: row;
+}
+.input-full-width {
+    width: 100%;
+}

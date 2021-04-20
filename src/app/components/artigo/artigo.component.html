@@ -1,1 +1,134 @@
-<p>artigo works!</p>
+<div class="custom-hero">
+    <section class=" hero section is-halfheight container">
+        <div class="hero-body ">
+            <div class="content">
+
+                <div class="tile is-ancestor">
+                    <div class="tile is-5 is-vertical">
+                        <div class="tile">
+                            <p class="subtitle has-text-white is-size-2">
+                                Artigos
+                            </p>
+                        </div>
+                        <div class="tile">
+                            <p class="is-size-5 has-text-white has-text-justified">
+                                You can choose a specific size for each viewport width. You simply need to append the
+                                viewport width to the size modifier.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
+
+<section class="section">
+
+    <div class="container box">
+        <div class="columns">
+            <div class="column">
+                <mat-form-field appearance="outline" class="custom-mat-input input-full-width">
+                    <mat-label>Artigo</mat-label>
+                    <input type="email" class="custom-mat-input" matInput placeholder="Autor ou título do artigo!">
+                </mat-form-field>
+            </div>
+            <div class="column">
+                <mat-form-field appearance="outline" class="input-full-width">
+                    <mat-label>Categoria</mat-label>
+                    <mat-select>
+                        <mat-option value="one">Cloud computing</mat-option>
+                        <mat-option value="two">Artificial Intelligence</mat-option>
+                    </mat-select>
+                </mat-form-field>
+            </div>
+            <div class="column">
+                <button mat-raised-button color="primary" style="height: 50px;" class="input-full-width">Pesquisar</button>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="section container">
+    <div class="container">
+        <div class="tile is-ancestor">
+            <div class="tile is-12 is-horizontal">
+                <div class="tile is-9">
+
+                    <div style="padding-bottom: 20px;">
+                        <div class="columns is-desktop block">
+                            <!-- <div class="column content is-small">
+                               <h1>Artigos em destaque</h1>
+                               <p class="subtitle">
+                                 Veja aqui os artigos mais recentes!
+                               </p>
+                             </div> -->
+                            <div class="column">
+                                <app-artigo-card></app-artigo-card>
+                            </div>
+                            <div class="column">
+                                <app-artigo-card></app-artigo-card>
+                            </div>
+                            <div class="column">
+                                <app-artigo-card></app-artigo-card>
+                            </div>
+                         
+                        </div>
+
+
+                        <div class="columns is-desktop block">
+                            <!-- <div class="column content is-small">
+                               <h1>Artigos em destaque</h1>
+                               <p class="subtitle">
+                                 Veja aqui os artigos mais recentes!
+                               </p>
+                             </div> -->
+                            <div class="column">
+                                <app-artigo-card></app-artigo-card>
+                            </div>
+                            <div class="column">
+                                <app-artigo-card></app-artigo-card>
+                            </div>
+                            <div class="column">
+                                <app-artigo-card></app-artigo-card>
+                            </div>
+                          
+                        </div>
+                    </div>
+
+                </div>
+                <div class="tile is-3" style="padding-left: 20px;">
+                    <article class="tile is-child notification o" >
+                        <div class="content" >
+                            <p class="subtitle">
+                                Artigos passados
+                            </p>
+                            <div class="content">
+                                <p>
+                                    <app-artigo-past-item></app-artigo-past-item>
+                                </p>
+                                <p>
+                                    <app-artigo-past-item></app-artigo-past-item>
+                                </p>
+                                <p>
+                                    <app-artigo-past-item></app-artigo-past-item>
+                                </p>
+                                <p>
+                                    <app-artigo-past-item></app-artigo-past-item>
+                                </p>
+                                <p>
+                                    <app-artigo-past-item></app-artigo-past-item>
+                                </p>
+                                <p>
+                                    <app-artigo-past-item></app-artigo-past-item>
+                                </p>
+                            </div>
+                        </div>
+
+                    </article>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+</section>

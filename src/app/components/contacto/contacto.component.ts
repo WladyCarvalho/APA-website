@@ -7,6 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ContactoComponent implements OnInit {
 
+   panelOpenState:boolean = true
   constructor() { }
 
   ngOnInit(): void {

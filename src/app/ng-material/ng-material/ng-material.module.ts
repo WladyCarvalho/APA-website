@@ -11,6 +11,8 @@ import { MatSelectModule } from '@angular/material/select';
 import { MatSnackBarModule } from '@angular/material/snack-bar';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatTooltipModule } from '@angular/material/tooltip';
+import {MatExpansionModule} from '@angular/material/expansion'
+import {MatDialogModule} from '@angular/material/dialog'
 
 
 @NgModule({
@@ -28,7 +30,9 @@ import { MatTooltipModule } from '@angular/material/tooltip';
     MatSnackBarModule,
     MatProgressSpinnerModule,
     MatTooltipModule,
-    MatToolbarModule
+    MatToolbarModule,
+    MatExpansionModule,
+    MatDialogModule
   ],
   exports:[
     CommonModule,
@@ -43,7 +47,9 @@ import { MatTooltipModule } from '@angular/material/tooltip';
     MatSnackBarModule,
     MatProgressSpinnerModule,
     MatTooltipModule,
-    MatToolbarModule
+    MatToolbarModule,
+    MatExpansionModule,
+    MatDialogModule
   ]
 
 })

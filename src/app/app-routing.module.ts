@@ -1,3 +1,5 @@
+import { ArtigoDetalheComponent } from './components/artigo-detalhe/artigo-detalhe.component';
+import { EventoDetalheComponent } from './components/evento-detalhe/evento-detalhe.component';
 import { DoacaoComponent } from './components/doacao/doacao.component';
 import { ComunidadeComponent } from './components/comunidade/comunidade.component';
 import { ContactoComponent } from './components/contacto/contacto.component';
@@ -15,7 +17,9 @@ const routes: Routes = [
   {path: 'sobre',component:SobreComponent},
   {path: 'contacto',component:ContactoComponent},
   {path: 'comunidades',component:ComunidadeComponent},
-  {path: 'doacao',component:DoacaoComponent}
+  {path: 'doacao',component:DoacaoComponent},
+  {path: 'detalhe-evento',component:EventoDetalheComponent},
+  {path: 'detalhe-artigo',component:ArtigoDetalheComponent}
 ];
 
 @NgModule({

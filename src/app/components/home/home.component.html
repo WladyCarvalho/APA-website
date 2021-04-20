@@ -45,7 +45,7 @@
       </p>
 
       <p>
-        <a class="btn-white" mat-raised-button color="blue" color="primary">SABER MAIS </a>
+        <a  mat-raised-button color="blue" color="primary" >SABER MAIS </a>
       </p>
     </div>
 
@@ -98,32 +98,48 @@
 
   <div class="container">
 
-    <div class="content custom-event-box">
-        <p class="subtitle is-3" style="color: #2699FB;">
-          Engenharia do design estratégias de UI/UX
-        </p>
-        <p class="has-text-white ">
-          <span class="event-container">
-            <mat-icon class="event-item" style="margin-left:0% !important;">date_range</mat-icon> <span>Mar 30, 2021</span>
-            <mat-icon class="event-item">laptop</mat-icon> <span>On line</span>
-          </span>
-        </p>
-        <p class="has-text-white has-text-justified-desktop " style="max-width: 500px;">
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-          tempor incididunt ut ero labore et dolore magna aliqua. Ut enim ad
-          minim veniam.
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-          tempor incididunt ut ero labore et dolore magna aliqua. Ut enim ad
-          minim veniam.
-        </p>
-        <p class="event-container">
-          <a mat-raised-button color="primary" class="btn-white">SABER MAIS </a>
-          <a mat-flat-button color="primary" class="hero-btn-stroke-b">SABER MAIS </a>
-        </p>
+    <div class="tile is-parent">
+      <article class="tile is-child is-5">
+       
+        <div class="content">
+
+          <div class="content custom-event-box">
+              <p class="subtitle is-2 has-text-white" >
+                  Engenharia do design estratégias de UI/UX
+              </p>
+              <p class="has-text-white ">
+                  <span class="event-container">
+                      <mat-icon class="event-item" style="margin-left:0% !important;">date_range</mat-icon> <span class="has-text-grey-lighter">Mar
+                          30, 2021</span>
+                      <mat-icon class="event-item">laptop</mat-icon> <span class="has-text-grey-lighter">On line</span>
+                  </span>
+              </p>
+              <p class="has-text-white  content" style="max-width: 92%;">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                  tempor incididunt ut ero labore et dolore magna aliqua. Ut enim ad
+                  minim veniam.
+              </p>
+              <p>
+                 <span>
+                     <div class="columns">
+                         <div class="column">
+                          <a mat-raised-button color="primary" class="btn-white" style="width: 100% !important;">SABER MAIS </a>
+                         </div>
+                         <div class="column">
+                          <a mat-flat-button color="primary" class="hero-btn-stroke-b" style="width: 100% !important;">SABER MAIS </a>
+                         </div>
+                     </div>
+                 </span>
+              </p>
+          </div>
+
+        </div>
+      </article>
     </div>
 
+
     <div class="view-prelectors has-text-centered ">
-        <a >
+        <a routerLink='detalhe-evento' (click)="navegar()">
           <span class="view-prelectors has-text-grey-light">
             VER PRELEITORES
             <mat-icon><span class="material-icons-outlined">
