@@ -1,3 +1,4 @@
+import { environment } from './../environments/environment';
 import { ArtigoPastItemComponent } from './components/artigo-past-item/artigo-past-item.component';
 
 import { NgMaterialModule } from './ng-material/ng-material/ng-material.module';
@@ -6,6 +7,7 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { FooterComponent } from './components/footer/footer.component';
 import { HomeComponent } from './components/home/home.component';
@@ -35,6 +37,12 @@ import { EventoDetalheComponent } from './components/evento-detalhe/evento-detal
 import { ArtigoDetalheComponent } from './components/artigo-detalhe/artigo-detalhe.component';
 import { PreleitorEventoCardComponent } from './components/preleitor-evento-card/preleitor-evento-card.component';
 import { ComentarioItemComponent } from './components/comentario-item/comentario-item.component';
+import { AngularFireModule } from '@angular/fire';
+import { AngularFirestoreModule } from '@angular/fire/firestore';
+import { AngularFireStorageModule } from '@angular/fire/storage';
+import { AngularFireDatabaseModule } from '@angular/fire/database';
+import { DatePipe } from '@angular/common';
+import { FlexLayoutModule } from '@angular/flex-layout';
 
 @NgModule({
   declarations: [
@@ -71,14 +79,17 @@ import { ComentarioItemComponent } from './components/comentario-item/comentario
     MatSidenavModule,
     MatIconModule,
     MatNativeDateModule,
+    FlexLayoutModule,
     MatListModule,
     FontAwesomeModule,
     HttpClientModule,
-    
-
-    
+    AngularFireDatabaseModule,
+    AngularFireModule.initializeApp(environment.firebaseConfig),
+    AngularFirestoreModule,
+    AngularFireStorageModule
   ],
-  providers: [],
-  bootstrap: [AppComponent]
+  providers: [DatePipe],
+  bootstrap: [AppComponent],
+  schemas: [ CUSTOM_ELEMENTS_SCHEMA ]
 })
 export class AppModule { }

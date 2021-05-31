@@ -29,7 +29,7 @@
         Excepteur sint occaecat cupidatat non proident,
         sunt in culpa qui officia
       </p>
-      <p class=" has-text-justified" style="max-width: 500px;">
+      <p class="" >
         Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
         tempor incididunt ut ero labore et dolore magna aliqua. Ut enim ad
         minim veniam, quis nostrud exercitation ullamco poriti laboris nisi ut
@@ -69,29 +69,12 @@
 
 
 <section class="section container">
-  <div class="columns is-desktop block">
-   <!-- <div class="column content is-small">
-      <h1>Artigos em destaque</h1>
-      <p class="subtitle">
-        Veja aqui os artigos mais recentes!
-      </p>
-    </div> -->
-    <div class="column">
-        <app-artigo-card></app-artigo-card>
-    </div>
-    <div class="column">
-      <app-artigo-card></app-artigo-card>
+  <div fxLayout="row wrap" fxLayoutGap="16px grid">
+    <div *ngFor="let num of [1,2,3,4]" fxFlex="25%" fxFlex.xs="100%" fxFlex.md="33.3%" fxFlex.sm="50%">
+      <app-artigo-card></app-artigo-card> 
   </div>
-  <div class="column">
-    <app-artigo-card></app-artigo-card>
 </div>
-
-<div class="column">
-  <app-artigo-card></app-artigo-card>
-</div>
-
-  </div>
-
+ 
 </section>
 
 <section class="section is-medium custom-section ">
@@ -103,31 +86,41 @@
        
         <div class="content">
 
-          <div class="content custom-event-box">
+          <div class="content custom-event-box" *ngIf="evento_h?.descricao!.length">
               <p class="subtitle is-2 has-text-white" >
-                  Engenharia do design estratégias de UI/UX
+                  <!--Engenharia do design estratégias de UI/UX-->
+                  {{evento_h!.tema}}
+                 
               </p>
               <p class="has-text-white ">
                   <span class="event-container">
-                      <mat-icon class="event-item" style="margin-left:0% !important;">date_range</mat-icon> <span class="has-text-grey-lighter">Mar
-                          30, 2021</span>
-                      <mat-icon class="event-item">laptop</mat-icon> <span class="has-text-grey-lighter">On line</span>
+                      <mat-icon class="event-item" style="margin-left:0% !important;">date_range</mat-icon> <span class="has-text-grey-lighter">
+                        <!--Mar 30, 2021 -->
+                        {{evento_h.data | date:'mediumDate'}}
+                      </span>
+                      <mat-icon class="event-item">laptop</mat-icon> <span class="has-text-grey-lighter">{{evento_h.modalidade}}</span>
                   </span>
               </p>
               <p class="has-text-white  content" style="max-width: 92%;">
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                <!--  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
                   tempor incididunt ut ero labore et dolore magna aliqua. Ut enim ad
-                  minim veniam.
+                  minim veniam.-->
+                  {{(evento_h!.descricao!.length!>300)? (evento_h.descricao| slice:0:300)+'...':(evento_h.descricao)}}
               </p>
               <p>
                  <span>
                      <div class="columns">
                          <div class="column">
-                          <a mat-raised-button color="primary" class="btn-white" style="width: 100% !important;">SABER MAIS </a>
+                          <a mat-raised-button color="primary" 
+                          class="btn-white" 
+                          style="width: 100% !important;" [routerLink]="['/detalhe-evento/',evento_h.eventoId,evento_h.tema]">
+                            SABER MAIS 
+                          </a>
                          </div>
+                         <!--
                          <div class="column">
                           <a mat-flat-button color="primary" class="hero-btn-stroke-b" style="width: 100% !important;">SABER MAIS </a>
-                         </div>
+                         </div> -->
                      </div>
                  </span>
               </p>
@@ -139,7 +132,7 @@
 
 
     <div class="view-prelectors has-text-centered ">
-        <a routerLink='detalhe-evento' (click)="navegar()">
+        <a  [routerLink]="['/detalhe-evento/',evento_h.eventoId,evento_h.tema]">
           <span class="view-prelectors has-text-grey-light">
             VER PRELEITORES
             <mat-icon><span class="material-icons-outlined">
@@ -158,22 +151,15 @@
       <p class="title">sponsors</p>
   
     </div>
+
+    <div fxLayout="row wrap" fxLayoutGap="16px grid">
+      <div *ngFor="let num of [1,2,3,4]" fxFlex="25%" fxFlex.xs="100%" fxFlex.md="33.3%" fxFlex.sm="50%">
+        <app-sponsor-item></app-sponsor-item>
+    </div>
+  </div>
     <div class="columns  sponsor-box">
       
-      <div class="column">
-          <app-sponsor-item></app-sponsor-item>
-      </div>
-      <div class="column">
-          <app-sponsor-item></app-sponsor-item>
-      </div>
-      <div class="column">
-          <app-sponsor-item></app-sponsor-item>
-      </div>
-      <div class="column">
-          <app-sponsor-item></app-sponsor-item>
-      </div>
-     
-  
+      
     </div>
   </div>
 
@@ -188,23 +174,11 @@
     <div class="column ">
       <p class="title">O que falam de nós!</p>
 
-      <div class="columns">
-
-        <div class="column">
-             <app-comment-people-feed></app-comment-people-feed> 
+      <div fxLayout="row wrap" fxLayoutGap="16px grid">
+          <div *ngFor="let num of [1,2,3,4]" fxFlex="25%" fxFlex.xs="100%" fxFlex.md="50%" fxFlex.sm="50%">
+            <app-comment-people-feed></app-comment-people-feed> 
         </div>
-        <div class="column">
-             <app-comment-people-feed></app-comment-people-feed> 
-        </div>
-        <div class="column">
-             <app-comment-people-feed></app-comment-people-feed> 
-        </div>
-        <div class="column">
-             <app-comment-people-feed></app-comment-people-feed> 
-        </div>
-
       </div>
-
     </div>
   </div>
 </section>

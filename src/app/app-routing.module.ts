@@ -11,15 +11,16 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 
 const routes: Routes = [
-  {path: 'home',component:HomeComponent},
+  {path: 'home',component:HomeComponent,pathMatch:'full'},
   {path: 'eventos',component:EventoComponent},
   {path: 'artigos',component:ArtigoComponent},
   {path: 'sobre',component:SobreComponent},
   {path: 'contacto',component:ContactoComponent},
   {path: 'comunidades',component:ComunidadeComponent},
   {path: 'doacao',component:DoacaoComponent},
-  {path: 'detalhe-evento',component:EventoDetalheComponent},
-  {path: 'detalhe-artigo',component:ArtigoDetalheComponent}
+  {path: 'detalhe-evento/:eventoId/:tema',component:EventoDetalheComponent},
+  {path: 'detalhe-artigo',component:ArtigoDetalheComponent},
+  {path:'**',component:HomeComponent}
 ];
 
 @NgModule({

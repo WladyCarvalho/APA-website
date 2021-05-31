@@ -11,13 +11,23 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 .mat-flat-button.mat-primary, .mat-raised-button.mat-primary, .mat-fab.mat-primary, .mat-mini-fab.mat-primary{
     background-color: #1387E3;
 }
-.mat-stroked-button{
+.mat-stroked-button
+{
     color:  #1387E3 !important;
 }
-.mat-button.mat-primary, .mat-icon-button.mat-primary, .mat-stroked-button.mat-primary{
+.mat-button.mat-primary, .mat-icon-button.mat-primary, .mat-stroked-button.mat-primary
+{
     color: #1387E3 !important;
 }
 
-.active{
+.active
+{
     color: #2699FB;
+}
+
+::-webkit-scrollbar {
+    width: 0px;
+    background: transparent; /* make scrollbar transparent */
   }
+
+

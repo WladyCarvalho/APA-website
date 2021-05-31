@@ -50,49 +50,17 @@
 </section>
 <section class="section container">
     <div class="container">
+
         <div class="tile is-ancestor">
             <div class="tile is-12 is-horizontal">
                 <div class="tile is-9">
-
                     <div style="padding-bottom: 20px;">
-                        <div class="columns is-desktop block">
-                            <!-- <div class="column content is-small">
-                               <h1>Artigos em destaque</h1>
-                               <p class="subtitle">
-                                 Veja aqui os artigos mais recentes!
-                               </p>
-                             </div> -->
-                            <div class="column">
-                                <app-artigo-card></app-artigo-card>
-                            </div>
-                            <div class="column">
-                                <app-artigo-card></app-artigo-card>
-                            </div>
-                            <div class="column">
-                                <app-artigo-card></app-artigo-card>
-                            </div>
-                         
+                        <div fxLayout="row wrap" fxLayoutGap="16px grid">
+                            <div *ngFor="let num of [1,2,3,4,5,6,7,8]" fxFlex="33.3%" fxFlex.xs="100%" fxFlex.md="33.3%" fxFlex.sm="50%">
+                                <app-artigo-card></app-artigo-card> 
+                          </div>
                         </div>
-
-
-                        <div class="columns is-desktop block">
-                            <!-- <div class="column content is-small">
-                               <h1>Artigos em destaque</h1>
-                               <p class="subtitle">
-                                 Veja aqui os artigos mais recentes!
-                               </p>
-                             </div> -->
-                            <div class="column">
-                                <app-artigo-card></app-artigo-card>
-                            </div>
-                            <div class="column">
-                                <app-artigo-card></app-artigo-card>
-                            </div>
-                            <div class="column">
-                                <app-artigo-card></app-artigo-card>
-                            </div>
-                          
-                        </div>
+                       
                     </div>
 
                 </div>

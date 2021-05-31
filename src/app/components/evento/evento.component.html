@@ -7,31 +7,36 @@
                  
                   <div class="content">
 
-                    <div class="content custom-event-box">
+                    <div class="content custom-event-box" *ngIf="evento_h?.descricao!.length">
                         <p class="subtitle is-2 has-text-white" >
-                            Engenharia do design estratégias de UI/UX
+                            {{evento_h!.tema}}
+                           <!-- Engenharia do design estratégias de UI/UX-->
                         </p>
                         <p class="has-text-white ">
                             <span class="event-container">
-                                <mat-icon class="event-item" style="margin-left:0% !important;">date_range</mat-icon> <span class="has-text-grey-lighter">Mar
-                                    30, 2021</span>
-                                <mat-icon class="event-item">laptop</mat-icon> <span class="has-text-grey-lighter">On line</span>
+                                <mat-icon class="event-item" style="margin-left:0% !important;">date_range</mat-icon> <span class="has-text-grey-lighter"><!--Mar
+                                    30, 2021-->
+                                    {{evento_h.data | date:'mediumDate'}}
+                                </span>
+                                <mat-icon class="event-item">laptop</mat-icon> <span class="has-text-grey-lighter">{{evento_h.modalidade}}</span>
                             </span>
                         </p>
                         <p class="has-text-white  content" style="max-width: 92%;">
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                            {{(evento_h!.descricao.length>300)? (evento_h!.descricao| slice:0:300)+'...':(evento_h?.descricao)}}
+                           <!-- Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
                             tempor incididunt ut ero labore et dolore magna aliqua. Ut enim ad
-                            minim veniam.
+                            minim veniam.-->
                         </p>
                         <p>
                            <span>
                                <div class="columns">
                                    <div class="column">
-                                    <a mat-raised-button color="primary" class="btn-white" style="width: 100% !important;">SABER MAIS </a>
+                                    <a mat-raised-button color="primary" class="btn-white" style="width: 100% !important;" [routerLink]="['/detalhe-evento/',evento_h.eventoId,evento_h.tema]">SABER MAIS </a>
                                    </div>
+                                   <!--
                                    <div class="column">
                                     <a mat-flat-button color="primary" class="hero-btn-stroke-b" style="width: 100% !important;">SABER MAIS </a>
-                                   </div>
+                                   </div>-->
                                </div>
                            </span>
                         </p>
@@ -41,7 +46,7 @@
                 </article>
               </div>
               <div class="">
-                <a (click)="navegar()">
+                <a [routerLink]="['/detalhe-evento/',evento_h.eventoId,evento_h.tema]">
                   <span class="view-prelectors has-text-grey-light">
                     VER PRELEITORES
                     <mat-icon><span class="material-icons-outlined">
@@ -77,32 +82,13 @@
             </div>
         </div>
     </div>
-    <div class="columns container">
-       <div class="column">
-        <p>
-            <app-evento-card></app-evento-card>
-        </p>
-        <p>
-            <app-evento-card></app-evento-card>
-        </p>
-       </div>
-       <div class="column">
-        <p>
-            <app-evento-card></app-evento-card>
-        </p>
-        <p>
-            <app-evento-card></app-evento-card>
-        </p>
-       </div>
 
-       <div class="column">
-        <p>
-            <app-evento-card></app-evento-card>
-        </p>
-        <p>
-            <app-evento-card></app-evento-card>
-        </p>
-       </div>
-       
+    <div class="content">
+        <div fxLayout="row wrap" fxLayoutGap="16px grid">
+            <div *ngFor="let num of [1,2,3,4,5,6,7,8]" fxFlex="25%" fxFlex.xs="100%" fxFlex.md="33.3%" fxFlex.sm="50%">
+                <app-evento-card></app-evento-card> 
+          </div>
+        </div>
     </div>
+  
 </section>

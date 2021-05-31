@@ -24,33 +24,39 @@
 </div>
 <section class="section container">
     <div class="content">
-        <div class="columns">
-            <div class="column">
+        <div fxLayout="row wrap" fxLayoutGap="16px grid">
+            <div *ngFor="let num of [1,2,3,4,5,6,7,8,9,10,11,12]" fxFlex="25%" fxFlex.xs="100%" fxFlex.md="33.3%" fxFlex.sm="50%">
                 <app-comunidade-item></app-comunidade-item>
+          </div>
+        <!--
+            <div class="columns">
+                <div class="column">
+                    <app-comunidade-item></app-comunidade-item>
+                </div>
+                <div class="column">
+                    <app-comunidade-item></app-comunidade-item>
+                </div>
+                <div class="column">
+                    <app-comunidade-item></app-comunidade-item>
+                </div>
+                <div class="column">
+                    <app-comunidade-item></app-comunidade-item>
+                </div>
             </div>
-            <div class="column">
-                <app-comunidade-item></app-comunidade-item>
-            </div>
-            <div class="column">
-                <app-comunidade-item></app-comunidade-item>
-            </div>
-            <div class="column">
-                <app-comunidade-item></app-comunidade-item>
+            <div class="columns">
+                <div class="column">
+                    <app-comunidade-item></app-comunidade-item>
+                </div>
+                <div class="column">
+                    <app-comunidade-item></app-comunidade-item>
+                </div>
+                <div class="column">
+                    <app-comunidade-item></app-comunidade-item>
+                </div>
+                <div class="column">
+                    <app-comunidade-item></app-comunidade-item>
+                </div>
+            -->
             </div>
         </div>
-        <div class="columns">
-            <div class="column">
-                <app-comunidade-item></app-comunidade-item>
-            </div>
-            <div class="column">
-                <app-comunidade-item></app-comunidade-item>
-            </div>
-            <div class="column">
-                <app-comunidade-item></app-comunidade-item>
-            </div>
-            <div class="column">
-                <app-comunidade-item></app-comunidade-item>
-            </div>
-        </div>
-    </div>
 </section>
