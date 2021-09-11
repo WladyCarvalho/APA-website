@@ -4,7 +4,6 @@ import { mEvento } from 'src/app/models/mEvento';
 import { EventoService } from './../services/evento.service';
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
-import { Tile } from '@angular/material/grid-list/tile-coordinator';
 
 @Component({
   selector: 'app-evento-detalhe',
@@ -15,11 +14,9 @@ export class EventoDetalheComponent implements OnInit {
 
   eventId!:string|null;
   eventData:mEvento|undefined = new mEvento();
-  
+  background_img!:String
 
   private unsubscribe$ = new Subject<void>();
-
-  
 
   constructor(
     private route:ActivatedRoute,
@@ -42,6 +39,7 @@ export class EventoDetalheComponent implements OnInit {
       .subscribe(
         (result:mEvento|undefined)=>{
           this.eventData = result;
+          this.background_img!=this.eventData?.photo_url
         }
       )
   }

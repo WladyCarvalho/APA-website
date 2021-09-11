@@ -1,8 +1,7 @@
 .custom-hero{
-    background-size: 100%;
-    background: rgb(19,135,227);
-    background: linear-gradient(237deg, rgba(19,135,227,1) 0%, rgba(82,176,247,1) 0%, rgba(0,0,0,1) 70%);
-}
+    background-position: center;
+     background-repeat: no-repeat;
+    background-size: cover;}
 
 .event-container{
     display: flex;

@@ -8,6 +8,9 @@ export class mEvento{
     modalidade!:string;
     localidade!:string;
     preleitores!:mPreleitor[];
-    eventoId!:string|undefined;
+    eventoId!:string|null;
+    photo_url!:string
+    photo_name!:string
+
 
 }

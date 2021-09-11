@@ -12,43 +12,39 @@
 
 .mat-toolbar.mat-primary {
   position: sticky;
+  margin: 0;
   top: 0;
   z-index: 1;
-  background: #040C10; 
+  background: #040c10;
 }
 
-.hidden{
+.hidden {
   display: none;
 }
 
-.hide{
+.hide {
   display: none;
 }
-path{
+path {
   fill: brown;
 }
 
-.spacer{
+.spacer {
   flex: 1 1 auto;
 }
 
-.custom-toolbar{
-  background-color: #040C10; 
+.custom-toolbar {
+  background-color: #040c10;
   width: 100% !important;
   position: sticky;
   top: 0;
   z-index: 1;
 }
 
-
-a.active{
-  color: #2699FB;
+a.active {
+  color: #2699fb;
 }
 
-.active-b:hover{
-  color: #2699FB;
+.active-b:hover {
+  color: #2699fb;
 }
-
-
-
-

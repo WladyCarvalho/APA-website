@@ -1,30 +1,32 @@
-<div class="custom-hero">
+<div class="custom-hero" [ngStyle]="{'background-image':'linear-gradient(212deg, rgba(19,135,227,1) 0%, rgba(82,176,247,0.835171568627451) 0%, rgba(0,0,0,0.8799894957983193) 100%),url('+eventData?.photo_url+');'
+}">
     <section class=" hero section is-halfheight container">
         <div class="hero-body ">
-            <div fxLayout="row wrap" >
-               <div fxFlex="50%" fxFlex.xs="100%">
-                <div class="content">
-                    <div class="tile is-ancestor">
-                        <div class="tile is-10 is-vertical">
-                            <div class="tile">
-                                <p class="subtitle has-text-white is-size-2">
-                                   <!-- Engenharia do design estratégias de UI/UX-->
-                                    {{eventData!.tema}}
-                                </p>
-                            </div>
-                            <div class="tile" *ngIf="eventData?.descricao!.length">
-                                <p class="has-text-white has-text-justified">
-                                    {{(eventData?.descricao!.length>300)? (eventData?.descricao!| slice:0:300)+'...':(eventData?.descricao)}}
-                                   <!-- You can choose a specific size for each viewport width. You simply need to append the
+            <div fxLayout="row wrap">
+                <div fxFlex="90%" fxFlex.xs="100%">
+                    <div class="content">
+                        <div class="tile is-ancestor">
+                            <div class="tile is-12 is-vertical">
+                                <div class="tile">
+                                    <p class="subtitle has-text-white is-size-2">
+                                        <!-- Engenharia do design estratégias de UI/UX-->
+                                        {{eventData!.tema}}
+                                    </p>
+                                </div>
+                                <div class="tile" *ngIf="eventData?.descricao!.length">
+                                    <p class="has-text-white has-text-justified">
+                                        {{(eventData?.descricao!.length>300)? (eventData?.descricao!|
+                                        slice:0:300)+'...':(eventData?.descricao)}}
+                                        <!-- You can choose a specific size for each viewport width. You simply need to append the
                                     viewport width to the size modifier.-->
-                                </p>
+                                    </p>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
-               </div>
             </div>
-            
+
         </div>
     </section>
 </div>
@@ -37,7 +39,7 @@
             </p>
             <p class="has-text-justified">
                 {{eventData!.descricao}}
-             <!--   Culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error
+                <!--   Culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error
                 sit
                 voluptartem accusantium doloremque laudantium, totam
                 rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi ropeior architecto beatae vitae dicta
@@ -87,37 +89,42 @@
 </section>
 <section class="section is-medium custom-section ">
 
-  
+
 </section>
 <section class="section container">
     <p class="subtitle is-3">
-        Preleitores
+        Prelectores
     </p>
     <div class="section-body container">
-            <div class="content">
-                <div fxLayout="row wrap" fxLayoutGap="16px grid">
-                    <div *ngFor="let preleitor of eventData!.preleitores" fxFlex="33.3%" fxFlex.xs="100%" fxFlex.md="50%" fxFlex.sm="50%">
-                        
-            <mat-card class="artigo-card">
-                <img src={{preleitor.photo_url}}>
-                <mat-card-actions>
-                    <p style="margin-top: 10px;">
-                        <a mat-icon-button href={{preleitor.socials[2].link}}>
-                            <mat-icon svgIcon="instagram" color="sn"></mat-icon>
-                          </a>
-                          <a mat-icon-button href={{preleitor.socials[1].link}}>
-                            <mat-icon svgIcon="twitter" color="sn"></mat-icon>
-                          </a>
-                          <a mat-icon-button href={{preleitor.socials[0].link}}>
-                            <mat-icon color="sn" svgIcon="facebook"></mat-icon>
-                          </a>
-                      </p>
-                </mat-card-actions>
-            </mat-card>
-                    </div>
+        <div class="content">
+            <div fxLayout="row wrap" fxLayoutGap="16px grid">
+
+                <div *ngFor="let preleitor of eventData!.preleitores" 
+                fxFlex="33.3%" fxFlex.xs="100%" fxFlex.md="50%"
+                fxFlex.sm="50%">
+
+                    <mat-card class="artigo-card">
+                        <img src={{preleitor.photo_url}}>
+                        <mat-card-actions>
+                            <p style="margin-top: 10px;">
+                                <a mat-icon-button href={{preleitor.socials[2].link}}>
+                                    <mat-icon svgIcon="instagram" color="sn"></mat-icon>
+                                </a>
+                                <a mat-icon-button href={{preleitor.socials[1].link}}>
+                                    <mat-icon svgIcon="twitter" color="sn"></mat-icon>
+                                </a>
+                                <a mat-icon-button href={{preleitor.socials[0].link}}>
+                                    <mat-icon color="sn" svgIcon="facebook"></mat-icon>
+                                </a>
+                            </p>
+                        </mat-card-actions>
+                    </mat-card>
+
                 </div>
             </div>
-            <!-- <mat-grid-list cols="9" rowHeight="1:1">
+        </div>
+
+        <!-- <mat-grid-list cols="9" rowHeight="1:1">
             <app-preleitor-evento-card></app-preleitor-evento-card>
            -->
 

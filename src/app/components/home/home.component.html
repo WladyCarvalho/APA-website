@@ -1,23 +1,27 @@
-<div class="custom-hero ">
+<div class="custom-hero">
   <section class="hero is-halfheight container">
-    <div class="hero-body ">
+    <div class="hero-body">
       <div>
-        <p class="title has-text-white">
-          Conferência APA
-        </p>
+        <p class="title has-text-white">Conferência APA</p>
         <p class="subtitle has-text-white">
-          Excepteur sint occaecat cupidatat <br>non proident, sunt in culpa qui officia
+          Excepteur sint occaecat cupidatat <br />non proident, sunt in culpa
+          qui officia
         </p>
         <p>
-          <a mat-flat-button color="primary" class="hero-btn-stroke">SABER MAIS </a>
+          <a
+            mat-flat-button
+            color="primary"
+            class="hero-btn-stroke"
+            [routerLink]="['/sobre/']"
+            >SABER MAIS
+          </a>
         </p>
       </div>
       <span class="spacer"></span>
       <div class="container">
-        <img src="../../../assets/img/hero_img.png">
+        <img src="../../../assets/img/hero_img.png" />
       </div>
     </div>
-
   </section>
 </div>
 
@@ -25,158 +29,187 @@
   <div class="columns is-desktop block">
     <div class="column content is-half">
       <p class="title">Sobre a conferência</p>
-      <p class="subtitle" style="max-width: 400px;">
-        Excepteur sint occaecat cupidatat non proident,
-        sunt in culpa qui officia
+      <p class="subtitle" style="max-width: 400px">
+        Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
+        officia
       </p>
-      <p class="" >
+      <p class="">
         Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-        tempor incididunt ut ero labore et dolore magna aliqua. Ut enim ad
-        minim veniam, quis nostrud exercitation ullamco poriti laboris nisi ut
-        aliquip ex ea commodo consequat
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-        tempor incididunt ut ero labore et dolore magna aliqua. Ut enim ad
-        minim veniam, quis nostrud exercitation ullamco poriti laboris nisi ut
-        aliquip ex ea commodo consequat
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-        tempor incididunt ut ero labore et dolore magna aliqua. Ut enim ad
-        minim veniam, quis nostrud exercitation ullamco poriti laboris nisi ut
-        aliquip ex ea commodo consequat
+        tempor incididunt ut ero labore et dolore magna aliqua. Ut enim ad minim
+        veniam, quis nostrud exercitation ullamco poriti laboris nisi ut aliquip
+        ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetur
+        adipisicing elit, sed do eiusmod tempor incididunt ut ero labore et
+        dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+        ullamco poriti laboris nisi ut aliquip ex ea commodo consequat. Lorem
+        ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+        tempor incididunt ut ero labore et dolore magna aliqua. Ut enim ad minim
+        veniam, quis nostrud exercitation ullamco poriti laboris nisi ut aliquip
+        ex ea commodo consequat
       </p>
 
       <p>
-        <a  mat-raised-button color="blue" color="primary" >SABER MAIS </a>
+        <a
+          mat-raised-button
+          color="blue"
+          color="primary"
+          [routerLink]="['/sobre/']"
+          >SABER MAIS
+        </a>
       </p>
     </div>
 
     <div class="column">
-      <img src="../../../assets/img/section1_img.png" alt="">
+      <img src="../../../assets/img/section1_img.png" alt="" />
     </div>
   </div>
-
 </section>
 
-
-
-<section class="section is-medium custom-section-2 ">
+<section class="section is-medium custom-section-2">
   <div class="has-text-centered">
     <p class="title has-text-white">Participe e aprenda</p>
   </div>
   <div class="has-text-centered">
-    <p class="subtitle has-text-white">No conforto de sua casa, ou em qualquer lugar!</p>
+    <p class="subtitle has-text-white">
+      No conforto de sua casa, ou em qualquer lugar!
+    </p>
   </div>
 </section>
-
 
 <section class="section container">
   <div fxLayout="row wrap" fxLayoutGap="16px grid">
-    <div *ngFor="let num of [1,2,3,4]" fxFlex="25%" fxFlex.xs="100%" fxFlex.md="33.3%" fxFlex.sm="50%">
-      <app-artigo-card></app-artigo-card> 
+    <div
+      *ngFor="let num of [1, 2, 3, 4]"
+      fxFlex="25%"
+      fxFlex.xs="100%"
+      fxFlex.md="33.3%"
+      fxFlex.sm="50%"
+    >
+      <app-artigo-card></app-artigo-card>
+    </div>
   </div>
-</div>
- 
 </section>
 
-<section class="section is-medium custom-section ">
-
+<section class="section is-medium custom-section">
   <div class="container">
-
     <div class="tile is-parent">
       <article class="tile is-child is-5">
-       
         <div class="content">
-
-          <div class="content custom-event-box" *ngIf="evento_h?.descricao!.length">
-              <p class="subtitle is-2 has-text-white" >
-                  <!--Engenharia do design estratégias de UI/UX-->
-                  {{evento_h!.tema}}
-                 
-              </p>
-              <p class="has-text-white ">
-                  <span class="event-container">
-                      <mat-icon class="event-item" style="margin-left:0% !important;">date_range</mat-icon> <span class="has-text-grey-lighter">
-                        <!--Mar 30, 2021 -->
-                        {{evento_h.data | date:'mediumDate'}}
-                      </span>
-                      <mat-icon class="event-item">laptop</mat-icon> <span class="has-text-grey-lighter">{{evento_h.modalidade}}</span>
-                  </span>
-              </p>
-              <p class="has-text-white  content" style="max-width: 92%;">
-                <!--  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+          <div
+            class="content custom-event-box"
+            *ngIf="(evento_h?.descricao)!.length"
+          >
+            <p class="subtitle is-2 has-text-white">
+              <!--Engenharia do design estratégias de UI/UX-->
+              {{ evento_h!.tema }}
+            </p>
+            <p class="has-text-white">
+              <span class="event-container">
+                <mat-icon class="event-item" style="margin-left: 0% !important"
+                  >date_range</mat-icon
+                >
+                <span class="has-text-grey-lighter">
+                  <!--Mar 30, 2021 -->
+                  {{ evento_h.data.toDate() | date: "mediumDate" }}
+                </span>
+                <mat-icon class="event-item">laptop</mat-icon>
+                <span class="has-text-grey-lighter">{{
+                  evento_h.modalidade
+                }}</span>
+              </span>
+            </p>
+            <p class="has-text-white content" style="max-width: 92%">
+              <!--  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
                   tempor incididunt ut ero labore et dolore magna aliqua. Ut enim ad
                   minim veniam.-->
-                  {{(evento_h!.descricao!.length!>300)? (evento_h.descricao| slice:0:300)+'...':(evento_h.descricao)}}
-              </p>
-              <p>
-                 <span>
-                     <div class="columns">
-                         <div class="column">
-                          <a mat-raised-button color="primary" 
-                          class="btn-white" 
-                          style="width: 100% !important;" [routerLink]="['/detalhe-evento/',evento_h.eventoId,evento_h.tema]">
-                            SABER MAIS 
-                          </a>
-                         </div>
-                         <!--
-                         <div class="column">
-                          <a mat-flat-button color="primary" class="hero-btn-stroke-b" style="width: 100% !important;">SABER MAIS </a>
-                         </div> -->
-                     </div>
-                 </span>
-              </p>
-          </div>
+              {{
+                evento_h!.descricao!.length! > 300
+                  ? (evento_h.descricao | slice: 0:300) + "..."
+                  : evento_h.descricao
+              }}
+            </p>
+            <p>
+              <span>
+                <div class="columns">
+                  <div class="column">
+                    <a
+                      mat-raised-button
+                      color="primary"
+                      class="btn-white"
+                      style="width: 100% !important"
+                      [routerLink]="[
+                        '/detalhe-evento/',
+                        evento_h.eventoId,
+                        evento_h.tema
+                      ]"
+                    >
+                      SABER MAIS
+                    </a>
+                  </div>
 
+                  <!--
+                    <div class="column">
+                      <a mat-flat-button color="primary" class="hero-btn-stroke-b" style="width: 100% !important;">SABER MAIS </a>
+                    </div> -->
+                </div>
+              </span>
+            </p>
+          </div>
         </div>
       </article>
     </div>
 
-
-    <div class="view-prelectors has-text-centered ">
-        <a  [routerLink]="['/detalhe-evento/',evento_h.eventoId,evento_h.tema]">
-          <span class="view-prelectors has-text-grey-light">
-            VER PRELEITORES
-            <mat-icon><span class="material-icons-outlined">
+    <div class="view-prelectors has-text-centered">
+      <a [routerLink]="['/detalhe-evento/', evento_h.eventoId, evento_h.tema]">
+        <span class="view-prelectors has-text-grey-light">
+          VER PRELEITORES
+          <mat-icon
+            ><span class="material-icons-outlined">
               arrow_forward
-              </span></mat-icon>
-          </span>
-        </a>
+            </span></mat-icon
+          >
+        </span>
+      </a>
     </div>
-</div>
-
+  </div>
 </section>
 
-<section class="section  gray-background">
+<section class="section gray-background">
   <div class="container">
     <div class="content is-half">
       <p class="title">sponsors</p>
-  
     </div>
 
     <div fxLayout="row wrap" fxLayoutGap="16px grid">
-      <div *ngFor="let num of [1,2,3,4]" fxFlex="25%" fxFlex.xs="100%" fxFlex.md="33.3%" fxFlex.sm="50%">
+      <div
+        *ngFor="let num of [1, 2, 3, 4]"
+        fxFlex="25%"
+        fxFlex.xs="100%"
+        fxFlex.md="33.3%"
+        fxFlex.sm="50%"
+      >
         <app-sponsor-item></app-sponsor-item>
+      </div>
     </div>
+    <div class="columns sponsor-box"></div>
   </div>
-    <div class="columns  sponsor-box">
-      
-      
-    </div>
-  </div>
-
 </section>
 
-<section class="section is-medium custom-section ">
-
-</section>
+<section class="section is-medium custom-section"></section>
 
 <section class="section container">
   <div class="columns is-desktop block">
-    <div class="column ">
+    <div class="column">
       <p class="title">O que falam de nós!</p>
 
       <div fxLayout="row wrap" fxLayoutGap="16px grid">
-          <div *ngFor="let num of [1,2,3,4]" fxFlex="25%" fxFlex.xs="100%" fxFlex.md="50%" fxFlex.sm="50%">
-            <app-comment-people-feed></app-comment-people-feed> 
+        <div
+          *ngFor="let num of [1, 2, 3, 4]"
+          fxFlex="25%"
+          fxFlex.xs="100%"
+          fxFlex.md="50%"
+          fxFlex.sm="50%"
+        >
+          <app-comment-people-feed></app-comment-people-feed>
         </div>
       </div>
     </div>

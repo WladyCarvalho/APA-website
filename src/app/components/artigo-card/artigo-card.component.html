@@ -1,36 +1,35 @@
-<mat-card class="artigo-card" >
+<mat-card class="artigo-card">
+  <mat-card-header>
+    <div mat-card-avatar class="artigo-header-image"></div>
+    <mat-card-title> John Doe </mat-card-title>
+    <mat-card-subtitle> UI/UX Designer </mat-card-subtitle>
+  </mat-card-header>
 
-    <mat-card-header>
-        <div mat-card-avatar class="artigo-header-image"></div>
-        <mat-card-title>
-            John Doe
-        </mat-card-title>
-        <mat-card-subtitle>
-            UI/UX Designer
-        </mat-card-subtitle>
-    </mat-card-header>
+  <img
+    src="../../../assets/img/background2.jpg"
+    class="card-c"
+    (click)="navegar()"
+  />
 
-    <img src="../../../assets/img/background2.jpg" class="card-c" (click)="navegar()">
+  <mat-card-content class="card-c" (click)="navegar()">
+    <div class="conteudo content">
+      <p class="subtitle is-5"><strong>John Doen</strong></p>
 
-    <mat-card-content class="card-c" (click)="navegar()">
-
-        <div class="conteudo content">
-            <p class="subtitle is-5"> <strong>John Doen</strong></p>
-            
-            <p class="block">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit
-            </p>
-        </div>
-    </mat-card-content>
-    <mat-card-actions>
-        <p style="margin-top: 10px;">
-            <a mat-icon-button >
-              <mat-icon svgIcon="clap"></mat-icon>
-            </a>
-            2k
-            <a mat-icon-button >
-              <mat-icon svgIcon="comment"></mat-icon>
-            </a> 1k
-          </p>
-    </mat-card-actions>
+      <p class="block">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit
+      </p>
+    </div>
+  </mat-card-content>
+  <mat-card-actions>
+    <p style="margin-top: 10px">
+      <a mat-icon-button>
+        <mat-icon svgIcon="clap"></mat-icon>
+      </a>
+      2k
+      <a mat-icon-button>
+        <mat-icon svgIcon="comment"></mat-icon>
+      </a>
+      1k
+    </p>
+  </mat-card-actions>
 </mat-card>

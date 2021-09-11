@@ -1,34 +1,37 @@
 <div class="custom-hero">
-    <section class=" hero section is-halfheight container">
-        <div class="hero-body ">
-            <div class="content">
-
-                <div class="tile is-ancestor">
-                    <div class="tile is-5 is-vertical">
-                        <div class="tile">
-                            <p class="subtitle has-text-white is-size-2">
-                                Comunidade APA
-                            </p>
-                        </div>
-                        <div class="tile">
-                            <p class="is-size-5 has-text-white has-text-justified">
-                                You can choose a specific size for each viewport width. You simply need to append the
-                                viewport width to the size modifier.
-                            </p>
-                        </div>
-                    </div>
-                </div>
+  <section class="hero section is-halfheight container">
+    <div class="hero-body">
+      <div class="content">
+        <div class="tile is-ancestor">
+          <div class="tile is-5 is-vertical">
+            <div class="tile">
+              <p class="subtitle has-text-white is-size-2">Comunidade APA</p>
             </div>
+            <div class="tile">
+              <p class="is-size-5 has-text-white has-text-justified">
+                You can choose a specific size for each viewport width. You
+                simply need to append the viewport width to the size modifier.
+              </p>
+            </div>
+          </div>
         </div>
-    </section>
+      </div>
+    </div>
+  </section>
 </div>
 <section class="section container">
-    <div class="content">
-        <div fxLayout="row wrap" fxLayoutGap="16px grid">
-            <div *ngFor="let num of [1,2,3,4,5,6,7,8,9,10,11,12]" fxFlex="25%" fxFlex.xs="100%" fxFlex.md="33.3%" fxFlex.sm="50%">
-                <app-comunidade-item></app-comunidade-item>
-          </div>
-        <!--
+  <div class="content">
+    <div fxLayout="row wrap" fxLayoutGap="16px grid">
+      <div
+        *ngFor="let num of [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]"
+        fxFlex="25%"
+        fxFlex.xs="100%"
+        fxFlex.md="33.3%"
+        fxFlex.sm="50%"
+      >
+        <app-comunidade-item></app-comunidade-item>
+      </div>
+      <!--
             <div class="columns">
                 <div class="column">
                     <app-comunidade-item></app-comunidade-item>
@@ -57,6 +60,6 @@
                     <app-comunidade-item></app-comunidade-item>
                 </div>
             -->
-            </div>
-        </div>
+    </div>
+  </div>
 </section>

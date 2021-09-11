@@ -1,33 +1,41 @@
 /* You can add global styles to this file, and also import other style files */
 
-html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+html,
+body {
+  height: 100%;
+}
+body {
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+  padding: 0;
+}
+
 @import url("https://fonts.googleapis.com/icon?family=Material+Icons");
 
-.mat-form-field-wrapper{
-    padding-bottom: 0em;
+.mat-form-field-wrapper {
+  padding-bottom: 0em;
 }
 
-.mat-flat-button.mat-primary, .mat-raised-button.mat-primary, .mat-fab.mat-primary, .mat-mini-fab.mat-primary{
-    background-color: #1387E3;
+.mat-flat-button.mat-primary,
+.mat-raised-button.mat-primary,
+.mat-fab.mat-primary,
+.mat-mini-fab.mat-primary {
+  background-color: #1387e3;
 }
-.mat-stroked-button
-{
-    color:  #1387E3 !important;
+.mat-stroked-button {
+  color: #1387e3 !important;
 }
-.mat-button.mat-primary, .mat-icon-button.mat-primary, .mat-stroked-button.mat-primary
-{
-    color: #1387E3 !important;
+.mat-button.mat-primary,
+.mat-icon-button.mat-primary,
+.mat-stroked-button.mat-primary {
+  color: #1387e3 !important;
 }
 
-.active
-{
-    color: #2699FB;
+.active {
+  color: #2699fb;
 }
 
 ::-webkit-scrollbar {
-    width: 0px;
-    background: transparent; /* make scrollbar transparent */
-  }
-
-
+  width: 0px;
+  background: transparent; /* make scrollbar transparent */
+}
