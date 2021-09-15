@@ -1,14 +1,34 @@
-.custom-hero{
-    background-size: 100%;
-    background: rgb(19,135,227);
-    background: linear-gradient(42deg, rgba(19,135,227,1) 0%, rgba(82,176,247,1) 0%, rgba(0,0,0,1) 57%);
+.custom-hero {
+  background-image: linear-gradient(
+      42deg,
+      rgba(19, 135, 227, 0.7) 0%,
+      rgba(82, 176, 247, 0.7) 0%,
+      rgba(0, 0, 0, 0.7) 57%
+    ),
+    url("../../../assets/img/contact_img.png");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
-.custom-section2{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    align-content: center;
-    justify-content: flex-start;
+.custom-section2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-content: center;
+  justify-content: flex-start;
 }
 
+.custom-section {
+  background-image: linear-gradient(
+      18deg,
+      rgba(0, 0, 0, 1) 2%,
+      rgba(0, 0, 0, 0.6867121848739496) 88%
+    ),
+    url("../../../assets/img/contact_img.png");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}

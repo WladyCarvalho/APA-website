@@ -27,6 +27,10 @@ export class FooterComponent implements OnInit {
         this.domSanitizer.bypassSecurityTrustResourceUrl("../assets/icons/facebook.svg")
       );
       this.matIconRegistry.addSvgIcon(
+        'google',
+        this.domSanitizer.bypassSecurityTrustResourceUrl("../assets/icons/google-plus.svg")
+      );
+      this.matIconRegistry.addSvgIcon(
         'clap',
         this.domSanitizer.bypassSecurityTrustResourceUrl("../assets/icons/ic_clap.svg")
       );

@@ -78,7 +78,7 @@
 
       <div class="view-prelectors has-text-centered">
         <a
-          [routerLink]="['/detalhe-evento/',evento_h.eventoId, evento_h.tema]"
+          [routerLink]="['/detalhe-evento/', evento_h.eventoId, evento_h.tema]"
         >
           <span class="view-prelectors has-text-grey-light">
             VER PRELEITORES
@@ -94,6 +94,7 @@
   </section>
 </div>
 <section class="section custom-section container">
+  <!--
   <div class="container box">
     <div class="columns">
       <div class="column">
@@ -131,12 +132,13 @@
       </div>
     </div>
   </div>
+  -->
 
   <div class="content">
     <div fxLayout="row wrap" fxLayoutGap="16px grid">
       <div
         *ngFor="let evento of eventos"
-        fxFlex="25%"
+        fxFlex="28%"
         fxFlex.xs="100%"
         fxFlex.md="33.3%"
         fxFlex.sm="50%"
